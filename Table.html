@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     <title>Table</title>
   </head>
   <style type="text/css">
@@ -158,8 +160,8 @@
 
   <div class="row" >
     <div class="col-sm-11">
-    <table class="table">
-      <tr>
+    <table class="table" id="sum_table" >
+      <tr class="titlerow">
         <th style="border-bottom: 2px solid #0d0c0c !important;border-right: 2px solid #0d0c0c !important;">Classes of Shares</th>
         <th style="border-bottom: 2px solid #0d0c0c !important;">17,147,500.0</th>
         <th style="border-bottom: 2px solid #0d0c0c !important;">18,050,000.0</th>
@@ -172,56 +174,56 @@
       </tr>
       <tr>
         <td style="border-right: 2px solid #0d0c0c !important;">Angel Shares</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td style="font-weight:700;">data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-      </tr>
+        <td class="rowDataSd">1210863.1</td>
+        <td class="rowDataSd">1259656.9</td>
+       <td class="rowDataSd">1311018.8</td>
+        <td class="rowDataSd"style="font-weight:700;">1365084.0</td>
+      <td class="rowDataSd">1419149.2</td>
+        <td class="rowDataSd">1475917.6</td>
+        <td class="rowDataSd">1535524.5</td>
+      </tr> 
        <tr>
         <td style="border-right: 2px solid #0d0c0c !important;">Series AShares</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-         <td style="font-weight:700;">data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
+        <td class="rowDataSd">3294915.1</td>
+        <td class="rowDataSd">3471419.7</td>
+       <td class="rowDataSd">3657213.9</td>
+        <td class="rowDataSd"style="font-weight:700;">3852786.9</td>
+      <td class="rowDataSd">4048359.8</td>
+        <td class="rowDataSd">42537114.4</td>
+        <td class="rowDataSd">4469330.6</td>
       </tr>
        <tr>
         <td style="border-right: 2px solid #0d0c0c !important;">Seed Shares</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-         <td style="font-weight:700;">data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
+        <td class="rowDataSd">1664279.2</td>
+        <td class="rowDataSd">1753432.6</td>
+       <td class="rowDataSd">1846268.3</td>
+        <td class="rowDataSd"style="font-weight:700;">1946063.3</td>
+      <td class="rowDataSd">2044848.2</td>
+        <td class="rowDataSd">2148572.4</td>
+        <td class="rowDataSd">2256482.8</td>
       </tr>
        <tr>
         <td style="border-right: 2px solid #0d0c0c !important;">SAFE</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td style="font-weight:700;">data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
+        <td class="rowDataSd">3735755.0</td>
+        <td class="rowDataSd">3935874.9</td>
+       <td class="rowDataSd">4146527.3</td>
+        <td class="rowDataSd"style="font-weight:700;">4368266.7</td>
+      <td class="rowDataSd">14590006.2</td>
+        <td class="rowDataSd">4822832.6</td>
+        <td class="rowDataSd">5067300.3</td>
 
       </tr>
         <tr>
         <td style="border-right: 2px solid #0d0c0c !important; border-bottom: 2px solid #0d0c0c !important;">Common</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important;">data</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important;">data</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important;">data</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important; font-weight: 700">data</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important;">data</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important;">data</td>
-        <td style="border-bottom: 2px solid #0d0c0c !important;">data</td>
+        <td class="rowDataSd" style="border-bottom: 2px solid #0d0c0c !important;">7241687.6</td>
+        <td class="rowDataSd" style="border-bottom: 2px solid #0d0c0c !important;">7629615.9</td>
+        <td class="rowDataSd" style="border-bottom: 2px solid #0d0c0c !important;">8037961.6</td>
+        <td class="rowDataSd" style="border-bottom: 2px solid #0d0c0c !important; font-weight: 700">8467799.1</td>
+        <td class="rowDataSd"  style="border-bottom: 2px solid #0d0c0c !important;">8897636.6</td>
+        <td class="rowDataSd" style="border-bottom: 2px solid #0d0c0c !important;">9348966.0</td>
+        <td class="rowDataSd" style="border-bottom: 2px solid #0d0c0c !important;">9822861.9</td>
       </tr>
-              <tr>
+             <!-- <tr>
         <td style="border-right: 2px solid #0d0c0c !important;">Total</td>
         <td>data</td>
         <td>data</td>
@@ -230,13 +232,42 @@
         <td>data</td>
         <td>data</td>
         <td>data</td>
-      </tr>
+      </tr>-->
+          <tr class="totalColumn">
+        <td class="">Total</td>
+        <td class="totalCol"></td>
+        <td class="totalCol"></td>
+        <td class="totalCol"></td>
+        <td class="totalCol"></td>
+        <td class="totalCol"></td>
+        <td class="totalCol"></td>
+        <td class="totalCol"></td>
+    </tr>
     </table>
     </div>
   </div>
 
 </div>
-   
+     <script type="text/javascript">
+
+ var totals=[0,0,0,0,0,0,0];
+$(document).ready(function(){
+
+    var $dataRows=$("#sum_table tr:not('.totalColumn, .titlerow')");
+    
+    $dataRows.each(function() {
+        $(this).find('.rowDataSd').each(function(i){        
+            totals[i]+=parseInt( $(this).html()); 
+        });
+    });
+    $("#sum_table td.totalCol").each(function(i){  
+        $(this).html(" "+totals[i]);
+    });
+
+});
+  var num = 5.56789;
+  var n = num.toFixed(1);
+   </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
